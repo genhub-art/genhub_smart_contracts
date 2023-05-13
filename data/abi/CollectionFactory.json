@@ -1,0 +1,5 @@
+[
+  "function cols(uint256) view returns (address)",
+  "function deploy(string,uint256,uint256) payable",
+  "function getAllCollections() view returns (address[])"
+]

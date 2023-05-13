@@ -1,6 +1,6 @@
 # Smart Contracts for http://genhub.art/
 
-Using hardhat to build, generate abis and deploy
+Using hardhat to build, generate abis and deploy.
 
 /contacts/collection.sol - ERC721 NFT collection for minting of generative NFTs. Takes a small fee.
 
@@ -23,6 +23,10 @@ Requires secrets.json
 
 ```
 npm install
+```
+
+```
+npx hardhat export-abi
 ```
 
 ```

@@ -1,14 +1,30 @@
-# Sample Hardhat Project
+# Smart Contracts for http://genhub.art/
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Using hardhat to build, generate abis and deploy
 
-Try running some of the following tasks:
+/contacts/collection.sol - ERC721 NFT collection for minting of generative NFTs. Takes a small fee.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+/contracts/factory.sol - Factory smart contract which deploys and keeps track of all collections.
+
+
+/data/abi/Collection.json and /data/abi/CollectionFactory.json - relevant smart contract abis
+
+
+/scripts/deploy.ts - deployment script
+
+Requires secrets.json
+
 ```
-# genhub_smart_contracts
+{
+  "priv": "...",
+  "bscscanApiKey": "..."
+}
+```
+
+```
+npm install
+```
+
+```
+npx hardhat run --network testnet scripts/deploy.ts
+```
